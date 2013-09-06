@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/liangxiongjun/svn-trunk/app/ecom/uap/computing/router'
+let g:netrw_dirhist_2='/home/liangxiongjun/svn-trunk/app/ecom/nova/se/se-as/production/conf/exp/exp_path'
+let g:netrw_dirhist_3='/home/liangxiongjun/svn-trunk/app/ecom/uap/router/search/conf'
+let g:netrw_dirhist_4='/home/liangxiongjun/svn-trunk/app/ecom/uap/router/search'

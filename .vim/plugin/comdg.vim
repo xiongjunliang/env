@@ -411,8 +411,8 @@ function! <SID>GetDoxygenStyleDoc(fun_info, leading_blank)
 	"other
   let doc = doc . a:leading_blank." * @see \n"
   let doc = doc . a:leading_blank." * @note \n"
-	let doc = doc . a:leading_blank." * @author ".<SID>GetUserName()."\n" 
-  let doc = doc . a:leading_blank." * @date ".<SID>GetDate()."\n"
+	let doc = doc . a:leading_blank." * Author ".<SID>GetUserName()."\n" 
+  let doc = doc . a:leading_blank." * Date ".<SID>GetDate()."\n"
 	"let doc = doc . a:leading_blank." * @version 1.0.0 \n" 
 	"let doc = doc . a:leading_blank." * @todo \n" 
 
@@ -451,10 +451,9 @@ function! <SID>GetDoxFileHeader(leading_blank)
   let doc = doc. a:leading_blank."//                                                       //\n"
   let doc = doc. a:leading_blank."///////////////////////////////////////////////////////////\n"
   let doc = doc. a:leading_blank." \n \n"
-	let doc = doc. a:leading_blank."// @file ".<SID>GetFileName()."\n"
-	let doc = doc. a:leading_blank."// @author ".<SID>GetUserName()."(".<SID>GetEmail().")\n"
-	let doc = doc. a:leading_blank."// @date ".<SID>GetDate()."\n"
-	let doc = doc. a:leading_blank."// @brief \n"
+	let doc = doc. a:leading_blank."// Author ".<SID>GetUserName()."(".<SID>GetEmail().")\n"
+	let doc = doc. a:leading_blank."// Date ".<SID>GetDate()."\n"
+	let doc = doc. a:leading_blank."// Brief \n"
 	let doc = doc. a:leading_blank."// \n"
   call append(line('$'), "/* vim: set expandtab ts=4 sw=4 sts=4 tw=100: */")
 	return doc
